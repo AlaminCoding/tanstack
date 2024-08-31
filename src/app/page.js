@@ -5,7 +5,6 @@ export default function Home() {
   const [email, setEmail] = useState("");
 
   const { isPending, data, error } = useTodosQuery(1);
-  console.log(data);
 
   const { data: loginData, mutateAsync, isSuccess } = useLoginMutation();
 
